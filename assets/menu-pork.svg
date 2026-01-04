@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" fill="#fff4e6"/>
+  <path d="M220 210c40 30 180 30 220 0" stroke="#8d2b0b" stroke-width="14" stroke-linecap="round" fill="#f6dcbf"/>
+  <ellipse cx="320" cy="190" rx="140" ry="60" fill="#f05a28" opacity="0.15"/>
+  <circle cx="260" cy="170" r="16" fill="#8d2b0b" opacity="0.7"/>
+  <circle cx="320" cy="160" r="16" fill="#8d2b0b" opacity="0.7"/>
+  <circle cx="380" cy="175" r="16" fill="#8d2b0b" opacity="0.7"/>
+  <text x="50%" y="85%" text-anchor="middle" font-family="'Inter', sans-serif" font-size="32" fill="#1f2937">Pork Favorites</text>
+</svg>

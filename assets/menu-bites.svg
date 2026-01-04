@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" fill="#eef6ff"/>
+  <rect x="180" y="120" width="280" height="120" rx="24" fill="#f05a28" opacity="0.18"/>
+  <rect x="210" y="140" width="220" height="80" rx="18" fill="#fff" stroke="#f05a28" stroke-width="8"/>
+  <circle cx="260" cy="180" r="16" fill="#ffba08"/>
+  <circle cx="320" cy="180" r="16" fill="#ffba08"/>
+  <circle cx="380" cy="180" r="16" fill="#ffba08"/>
+  <text x="50%" y="85%" text-anchor="middle" font-family="'Inter', sans-serif" font-size="32" fill="#1e293b">Street Bites</text>
+</svg>

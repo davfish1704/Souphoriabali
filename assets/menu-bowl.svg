@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" fill="#f8f5ef"/>
+  <circle cx="320" cy="180" r="120" fill="#ffefd5" stroke="#f05a28" stroke-width="10"/>
+  <path d="M180 180c10 90 270 90 280 0" stroke="#f05a28" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <circle cx="250" cy="150" r="10" fill="#74b816"/>
+  <circle cx="320" cy="140" r="10" fill="#74b816"/>
+  <circle cx="360" cy="165" r="10" fill="#74b816"/>
+  <text x="50%" y="85%" text-anchor="middle" font-family="'Inter', sans-serif" font-size="32" fill="#2d2a32">Souphoria Menu</text>
+</svg>
