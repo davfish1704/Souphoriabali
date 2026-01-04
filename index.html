@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Souphoria | Pork Rice & Signature Soups in Bali</title>
+  <meta name="description" content="Souphoria serves comforting pork rice bowls and signature soups in Kerobokan/Canggu. Order fast via WhatsApp, view our menu, or get directions." />
+  <meta property="og:title" content="Souphoria Bali | Pork & Soup Favorites" />
+  <meta property="og:description" content="Order Souphoria's signature soups and pork dishes in Bali. Tap to WhatsApp or get directions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://souphoria.example.com" />
+  <meta property="og:image" content="assets/menu-bowl.svg" />
+  <link rel="icon" href="assets/menu-bowl.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>window.dataLayer = window.dataLayer || [];</script>
+</head>
+<body>
+  <header>
+    <div class="navbar" aria-label="Top navigation">
+      <div class="brand" aria-label="Souphoria brand">Souphoria</div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Location</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button secondary" href="#menu">View Menu</a>
+        <a class="button primary" id="navOrder" href="#" aria-label="Order on WhatsApp">Order on WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <h1>Comfort bowls, soulful soup, Bali freshness.</h1>
+        <p>Street-food energy, premium taste. Order instantly on WhatsApp or drop by our kitchen in Kerobokan/Canggu.</p>
+        <div class="hero-badges">
+          <span class="badge">🔥 Popular local pick</span>
+          <span class="badge">🧼 Fresh daily</span>
+          <span class="badge">⭐ 4.8 community-loved</span>
+        </div>
+        <div class="hero-ctas">
+          <a class="button primary" id="heroOrder" href="#" aria-label="Order on WhatsApp">Order on WhatsApp</a>
+          <a class="button secondary" href="#menu">View Menu</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-card">
+          <img src="assets/menu-bowl.svg" alt="Signature soup bowl" loading="lazy" />
+          <div class="badge" style="margin-top:12px;">“Rich broth, perfect pork.” — Review</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <h2>Menu images</h2>
+      <p class="lead">Swipe through the menu boards. Tap to zoom on mobile.</p>
+      <div class="gallery" id="menuGallery" aria-label="Menu images"></div>
+    </section>
+
+    <section class="section" id="menu">
+      <h2>Order ready menu</h2>
+      <p class="lead">Search, filter, and add items. We’ll prep your WhatsApp order in one tap.</p>
+      <div class="menu-controls">
+        <input type="search" id="searchInput" placeholder="Search dishes" aria-label="Search menu" />
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All categories</option>
+        </select>
+      </div>
+      <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section" id="trust">
+      <h2>Loved in Kerobokan & Canggu</h2>
+      <p class="lead">People come for the broth, stay for the vibe.</p>
+      <div class="review-cards">
+        <div class="review">“Packed with flavor. The pork belly melts.”</div>
+        <div class="review">“Fast replies on WhatsApp. Perfect before surf.”</div>
+        <div class="review">“Clean kitchen, generous portions. New go-to!”</div>
+      </div>
+    </section>
+
+    <section class="section" id="location">
+      <h2>Find us</h2>
+      <p class="lead">Tap for directions or send us a message.</p>
+      <div class="hero-badges" style="margin-bottom:16px;">
+        <span class="badge" id="addressBadge"></span>
+        <span class="badge" id="hoursBadge"></span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr;gap:14px;">
+        <iframe id="mapFrame" class="map-embed" title="Souphoria location" width="100%" height="320" loading="lazy" allowfullscreen></iframe>
+        <div class="hero-ctas">
+          <a class="button primary" id="ctaDirections" href="#">Get directions</a>
+          <a class="button secondary" id="ctaMaps" href="#">Open in Google Maps</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="order-drawer" aria-label="Order summary">
+    <div class="order-header">
+      <div>
+        <strong>Order summary</strong>
+        <div style="color:var(--muted);font-size:0.9rem;">Add items then send to WhatsApp</div>
+      </div>
+      <button class="button secondary" id="clearOrder" style="padding:8px 12px;">Clear</button>
+    </div>
+    <div class="order-list" id="orderList" aria-live="polite"></div>
+    <div class="totals"><span>Total items</span><span id="totalCount">0</span></div>
+    <button class="button primary" id="sendOrder">Send order on WhatsApp</button>
+  </aside>
+
+  <a class="floating-wa" id="floatingWA" href="#" aria-label="WhatsApp chat">
+    <span>WhatsApp us</span>
+  </a>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>Souphoria</h3>
+        <p id="footerAddress"></p>
+        <p id="footerHours"></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>WhatsApp: <a id="footerWA" href="#"></a></p>
+        <p>Instagram: <a id="footerIG" href="#">Instagram</a></p>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <p class="disclaimer">Prices may change. Tax/service may apply.</p>
+        <p class="disclaimer">Privacy-friendly: analytics events only fire on interactions; no tracking cookies.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
