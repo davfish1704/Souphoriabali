@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Souphoria | Pork Rice & Signature Soups in Bali</title>
-  <meta name="description" content="Souphoria serves comforting pork rice bowls and signature soups in Kerobokan/Canggu. Order fast via WhatsApp, view our menu, or get directions." />
+  <meta name="description" content="Souphoria serves comforting pork rice bowls and signature soups in Kerobokan/Canggu. Order fast via Gojek or Grab, view our menu, or get directions." />
   <meta property="og:title" content="Souphoria Bali | Pork & Soup Favorites" />
-  <meta property="og:description" content="Order Souphoria's signature soups and pork dishes in Bali. Tap to WhatsApp or get directions." />
+  <meta property="og:description" content="Order Souphoria's signature soups and pork dishes in Bali. Tap to order on Gojek or Grab, or get directions." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://souphoria.example.com" />
-  <meta property="og:image" content="assets/menu-bowl.svg" />
-  <link rel="icon" href="assets/menu-bowl.svg" />
+  <!-- AI image: /assets/images/hero/hero-bowl-moody.jpg | Prompt: "premium asian street food bowls, pork rice and soup, dark moody lighting, cinematic food photography, shallow depth of field" -->
+  <meta property="og:image" content="https://image.pollinations.ai/prompt/premium%20asian%20street%20food%20bowls%2C%20pork%20rice%20and%20soup%2C%20dark%20moody%20lighting%2C%20cinematic%20food%20photography%2C%20shallow%20depth%20of%20field" />
+  <link rel="icon" href="https://image.pollinations.ai/prompt/premium%20asian%20street%20food%20bowls%2C%20pork%20rice%20and%20soup%2C%20dark%20moody%20lighting%2C%20cinematic%20food%20photography%2C%20shallow%20depth%20of%20field" />
   <link rel="stylesheet" href="styles.css" />
   <script>window.dataLayer = window.dataLayer || [];</script>
 </head>
@@ -25,7 +26,8 @@
       </nav>
       <div class="nav-actions">
         <a class="button secondary" href="#menu">View Menu</a>
-        <a class="button primary" id="navOrder" href="#" aria-label="Order on WhatsApp">Order on WhatsApp</a>
+        <a class="button primary" data-delivery="gojek" href="https://gojek.com" target="_blank" rel="noopener noreferrer" aria-label="Order Souphoria on Gojek">Order on Gojek</a>
+        <a class="button dark" data-delivery="grab" href="https://grab.com" target="_blank" rel="noopener noreferrer" aria-label="Order Souphoria on Grab">Order on Grab</a>
       </div>
     </div>
   </header>
@@ -34,20 +36,22 @@
     <section class="hero" id="top">
       <div class="hero-text">
         <h1>Comfort bowls, soulful soup, Bali freshness.</h1>
-        <p>Street-food energy, premium taste. Order instantly on WhatsApp or drop by our kitchen in Kerobokan/Canggu.</p>
+        <p>Street-food energy, premium taste. Order instantly on Gojek or Grab, or drop by our kitchen in Kerobokan/Canggu.</p>
         <div class="hero-badges">
           <span class="badge">🔥 Popular local pick</span>
           <span class="badge">🧼 Fresh daily</span>
           <span class="badge">⭐ 4.8 community-loved</span>
         </div>
         <div class="hero-ctas">
-          <a class="button primary" id="heroOrder" href="#" aria-label="Order on WhatsApp">Order on WhatsApp</a>
+          <a class="button primary" data-delivery="gojek" href="https://gojek.com" target="_blank" rel="noopener noreferrer" aria-label="Order Souphoria on Gojek">Order on Gojek</a>
+          <a class="button dark" data-delivery="grab" href="https://grab.com" target="_blank" rel="noopener noreferrer" aria-label="Order Souphoria on Grab">Order on Grab</a>
           <a class="button secondary" href="#menu">View Menu</a>
         </div>
       </div>
       <div class="hero-image">
         <div class="hero-card">
-          <img src="assets/menu-bowl.svg" alt="Signature soup bowl" loading="lazy" />
+          <!-- AI image: /assets/images/hero/hero-bowl-moody.jpg | Prompt: "premium asian street food bowls, pork rice and soup, dark moody lighting, cinematic food photography, shallow depth of field" -->
+          <img src="https://image.pollinations.ai/prompt/premium%20asian%20street%20food%20bowls%2C%20pork%20rice%20and%20soup%2C%20dark%20moody%20lighting%2C%20cinematic%20food%20photography%2C%20shallow%20depth%20of%20field" alt="Signature pork rice bowl and soup in moody lighting" loading="lazy" />
           <div class="badge" style="margin-top:12px;">“Rich broth, perfect pork.” — Review</div>
         </div>
       </div>
@@ -55,18 +59,27 @@
 
     <section class="section" id="gallery">
       <h2>Menu images</h2>
-      <p class="lead">Swipe through the menu boards. Tap to zoom on mobile.</p>
-      <div class="gallery" id="menuGallery" aria-label="Menu images"></div>
+      <p class="lead">Fresh from the kitchen – a glimpse of what we serve every day.</p>
+      <div class="gallery" aria-label="Menu images">
+        <!-- AI image: /assets/images/menu/pork-rice-bowl.jpg | Prompt: "crispy pork rice bowl, asian street food, top-down view, dark warm lighting, cinematic food photography" -->
+        <img src="https://image.pollinations.ai/prompt/crispy%20pork%20rice%20bowl%2C%20asian%20street%20food%2C%20top-down%20view%2C%20dark%20warm%20lighting%2C%20cinematic%20food%20photography" alt="Crispy pork rice bowl with sambal and herbs" loading="lazy" />
+        <!-- AI image: /assets/images/menu/char-siu-bowl.jpg | Prompt: "char siu pork bowl with rice, glossy glaze, moody lighting, professional food photo" -->
+        <img src="https://image.pollinations.ai/prompt/char%20siu%20pork%20bowl%20with%20rice%2C%20glossy%20glaze%2C%20moody%20lighting%2C%20professional%20food%20photo" alt="Char siu pork bowl with rice and greens" loading="lazy" />
+        <!-- AI image: /assets/images/menu/signature-soup.jpg | Prompt: "steaming pork bone broth soup, noodles, soft egg, dark moody food photography, shallow depth of field" -->
+        <img src="https://image.pollinations.ai/prompt/steaming%20pork%20bone%20broth%20soup%2C%20noodles%2C%20soft%20egg%2C%20dark%20moody%20food%20photography%2C%20shallow%20depth%20of%20field" alt="Signature pork bone broth soup with noodles" loading="lazy" />
+      </div>
     </section>
 
     <section class="section" id="menu">
-      <h2>Order ready menu</h2>
-      <p class="lead">Search, filter, and add items. We’ll prep your WhatsApp order in one tap.</p>
-      <div class="menu-controls">
-        <input type="search" id="searchInput" placeholder="Search dishes" aria-label="Search menu" />
-        <select id="categoryFilter" aria-label="Filter by category">
-          <option value="all">All categories</option>
-        </select>
+      <div class="menu-header">
+        <div>
+          <h2>Menu</h2>
+          <p class="lead">Browse our best-sellers, then order on your favorite delivery app.</p>
+        </div>
+        <div class="menu-ctas">
+          <a class="button primary" data-delivery="gojek" href="https://gojek.com" target="_blank" rel="noopener noreferrer">Order on Gojek</a>
+          <a class="button dark" data-delivery="grab" href="https://grab.com" target="_blank" rel="noopener noreferrer">Order on Grab</a>
+        </div>
       </div>
       <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
     </section>
@@ -76,14 +89,14 @@
       <p class="lead">People come for the broth, stay for the vibe.</p>
       <div class="review-cards">
         <div class="review">“Packed with flavor. The pork belly melts.”</div>
-        <div class="review">“Fast replies on WhatsApp. Perfect before surf.”</div>
+        <div class="review">“Quick service, perfect before surf.”</div>
         <div class="review">“Clean kitchen, generous portions. New go-to!”</div>
       </div>
     </section>
 
     <section class="section" id="location">
       <h2>Find us</h2>
-      <p class="lead">Tap for directions or send us a message.</p>
+      <p class="lead">Tap for directions or open in Google Maps.</p>
       <div class="hero-badges" style="margin-bottom:16px;">
         <span class="badge" id="addressBadge"></span>
         <span class="badge" id="hoursBadge"></span>
@@ -98,22 +111,10 @@
     </section>
   </main>
 
-  <aside class="order-drawer" aria-label="Order summary">
-    <div class="order-header">
-      <div>
-        <strong>Order summary</strong>
-        <div style="color:var(--muted);font-size:0.9rem;">Add items then send to WhatsApp</div>
-      </div>
-      <button class="button secondary" id="clearOrder" style="padding:8px 12px;">Clear</button>
-    </div>
-    <div class="order-list" id="orderList" aria-live="polite"></div>
-    <div class="totals"><span>Total items</span><span id="totalCount">0</span></div>
-    <button class="button primary" id="sendOrder">Send order on WhatsApp</button>
-  </aside>
-
-  <a class="floating-wa" id="floatingWA" href="#" aria-label="WhatsApp chat">
-    <span>WhatsApp us</span>
-  </a>
+  <div class="mobile-cta" aria-label="Order online">
+    <a class="button primary" data-delivery="gojek" href="https://gojek.com" target="_blank" rel="noopener noreferrer">Order on Gojek</a>
+    <a class="button dark" data-delivery="grab" href="https://grab.com" target="_blank" rel="noopener noreferrer">Order on Grab</a>
+  </div>
 
   <footer class="footer">
     <div class="footer-content">
@@ -123,9 +124,9 @@
         <p id="footerHours"></p>
       </div>
       <div>
-        <h4>Contact</h4>
-        <p>WhatsApp: <a id="footerWA" href="#"></a></p>
-        <p>Instagram: <a id="footerIG" href="#">Instagram</a></p>
+        <h4>Delivery</h4>
+        <p><a class="footer-cta" data-delivery="gojek" href="https://gojek.com" target="_blank" rel="noopener noreferrer">Order on Gojek</a></p>
+        <p><a class="footer-cta" data-delivery="grab" href="https://grab.com" target="_blank" rel="noopener noreferrer">Order on Grab</a></p>
       </div>
       <div>
         <h4>Info</h4>
